@@ -1,0 +1,11 @@
+// 1. Print all numbers from 1 to 10.
+
+ function allNumber(){
+    
+     for(let i=1; i<=10; i++){
+         console.log(`${i}`);
+         
+     }
+ }
+
+ allNumber();

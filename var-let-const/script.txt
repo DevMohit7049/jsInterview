@@ -1,0 +1,5 @@
+JavaScript me variable ek container
+ hota hai jo kisi bhi value ko store kar sakta hai. Variables ko declare karne ke liye var, let, aur const ka use hota hai.
+
+
+

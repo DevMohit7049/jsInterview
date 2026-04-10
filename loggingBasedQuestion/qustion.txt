@@ -1,0 +1,78 @@
+1. use console.log to display the current year ? 
+2. create two variable for first and last name,
+concatenate and log them.
+3. Track the value of variable by logging it before
+and after updation
+4.use console.erro() to simulate an error message
+5. log the square of the number 12 to the console
+6. print the type of the variable holding the value true
+7. create a variable that hold your age and log whther its
+greater the 18 ? 
+
+
+2. variable and datatype 10 question 
+
+1.Decleare the variable using let and const and log it ? 
+2.create a constant and store the value of PI and log it ? 
+3.Reassign a value to a variable decleared with let and log it
+4.create a variable with a number as string and log its type 
+5. check the type of null
+6. use typeof to check the type of a boolean variable
+7. create three variable of type string, number, and boolean and log their 
+value
+8. Decleare a variable without assigning a value log its type 
+9. Create a variable using undefined and log its type
+10. Use const to create an array.Try reassigning the array the 
+array and observe the error.
+
+3. Loop (10 Question)
+
+1. Write a for loop to print numbers from 1 to 50
+2. Use a while loop to sum the number from 1 to 10
+3. Create a for..of loop to log each character of the 
+string "Javascript"
+4. Write a for loop that skip the even number 
+between 1 to 20
+5.Use a do...while loop to log numbers from 5 to 1
+6. Create a for loop that calculate the factorial of 5
+7. Write a nested loop to print a 3x3 grid of number
+8. Use a for loop to reverse an array
+9. Write a while loop that logs number from 1 to 100
+divisible by 5 
+10. Make a for...in loop to iterate over an object 
+and log its keys
+
+Array (10 Question)
+
+1. Create an array of your top 5 movies and log it
+2. Find and log the second element of an array 
+3. Add two element to the start of an array using shift()
+4. Remove the last element of an array and log the update 
+array
+5. Use .slice() to extract the first three element of of an
+array
+6.Find the index of a specific element in an array
+using .indexOf()  
+7. Check if a value exists in an array using .includes()
+8.Combine two array [1,2,3] and [4,5,6] using concate()
+9.Write a program that create a copy of array without
+mutating the original array 
+10. sort an array of number in ascending order
+
+
+Function (10 Question) 
+1.Write a Function to check if a number is even or odd
+2.Create a Function to calculate the area of circle with 
+a given radius
+3. Write a Function that accepts an array and returns the 
+sum of its element
+4. Create a Function that checks if a string starts 
+with specific character
+5.Write a Function to check maximum of two number
+6.Create a Function that takes a number and return
+its factorial
+7. Write a Function that accespts a string and return its
+revers
+8. Create a Function to find the largest number in an array
+9.write a function that convert a string into kabab-case
+10. 

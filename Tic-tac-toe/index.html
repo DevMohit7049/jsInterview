@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    .row{
+
+        display: flex;
+    }
+    .col{
+        height: 60px;
+        width: 60px;
+        border: 1px solid black;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="grid">
+            <div class="row">
+                <div onclick="handleClick(this)" id="0" class="col"></div>
+                <div onclick="handleClick(this)" id="1" class="col"></div>
+                <div onclick="handleClick(this)" id="2" class="col"></div>
+            </div>
+
+            <div class="row">
+                <div onclick="handleClick(this)" id="3" class="col"></div>
+                <div onclick="handleClick(this)" id="4" class="col"></div>
+                <div onclick="handleClick(this)" id="5" class="col"></div>
+            </div>
+
+            <div class="row">
+                <div onclick="handleClick(this)" id="6" class="col"></div>
+                <div onclick="handleClick(this)" id="7" class="col"></div>
+                <div onclick="handleClick(this)" id="8" class="col"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        let currentPlayer = "X";
+        let arr = Array(9).fill(null);
+        
+        
+        function handleClick(el){          
+            const id = Number(el.id);
+              if(arr[id] !== null) return ;  
+            arr[id] = currentPlayer;
+            el.innerText = currentPlayer;
+            checkWinner();
+            currentPlayer = currentPlayer === "X" ? "0" : "X"
+        }
+  
+        function checkWinner(){
+            if( (arr[0]!==null && arr[0] === arr[1] && arr[1]===arr[2]) || 
+                (arr[3]!==null && arr[3] === arr[4] && arr[4]===arr[5]) || 
+                (arr[6]!==null && arr[6] === arr[7] && arr[7]===arr[8]) ||
+                (arr[0]!==null && arr[0] === arr[3] && arr[3]===arr[6]) || 
+                (arr[1]!==null && arr[1] === arr[4] && arr[4]===arr[7]) || 
+                (arr[2]!==null && arr[2] === arr[5] && arr[5]===arr[8]) ||
+                (arr[0]!==null && arr[0] === arr[4] && arr[4]===arr[8]) ||
+                (arr[2]!==null && arr[2] === arr[4] && arr[4]===arr[6])
+             ){
+               document.write(`winner is ${currentPlayer}`);
+               return;
+             }
+
+             if(!arr.some((e)=>e===null)){
+                document.write(`Draw !`)
+             }
+        }
+
+    </script>
+</body>
+</html>
