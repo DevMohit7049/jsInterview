@@ -1,9 +1,9 @@
 // 2. Print numbers from 10 down to 1 in reverse order.
- function allNumber(){
-    
-     for(let i=10; i>=1; i--){
-         console.log(`${i}`);
-     }
- }
+function allNumber() {
 
- allNumber();
+    for (let i = 10; i >= 1; i--) {
+        console.log(`${i}`);
+    }
+}
+
+allNumber();
